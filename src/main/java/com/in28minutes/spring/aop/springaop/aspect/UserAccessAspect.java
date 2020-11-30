@@ -18,6 +18,7 @@ public class UserAccessAspect {
 
     //What kind of method calls I would intercept
     //execution(* PACKAGE.*.*(..)) - Pointcut
+    //Weaving & Weaver
     // Pointcut : expression which defines what kind of method I would want to intercept.
     @Before("execution(*  com.in28minutes.spring.aop.springaop.data.*.*(..))") // 서브 패키지 안에 있는 모든 호출을 인터셉트
     public void before(JoinPoint joinPoint) { // joinPoint : specitic interception of a method call
